@@ -1,0 +1,62 @@
+import numpy
+
+#creating a array of numbers
+myarray1=numpy.array([11,22,33],int)
+myarray1
+#OUTPUT:array([11, 22, 33])
+
+#creating a array of characters
+myarray2=numpy.array(['a','b','c'])
+myarray2
+OUTPUT:array(['a', 'b', 'c'], dtype='<U1')
+
+#creating array using zeros function
+array3=numpy.zeros((4))
+array3
+OUTPUT:array([0., 0., 0., 0.])
+
+#functions on 1 Dimensional array
+#modifying elements
+myarray1[1]=55
+myarray1
+OUTPUT:array([11, 55, 33])
+
+#for size
+myarray1.size
+OUTPUT:3
+
+import numpy as np
+
+#creating multiarray
+multiarray=np.array([[1,2,3],[5,6,7]])
+multiarray
+OUTPUT:array([[1, 2, 3],
+              [5, 6, 7]])
+
+#array using matrix function
+multiarray1=np.matrix("11,22;33,44;55,66")
+multiarray1
+OUTPUT:matrix([[11, 22],
+               [33, 44],
+               [55, 66]])
+
+#creating 6 dimentional array
+array5=([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36])
+array5
+multiarray5=np.reshape(array5,(6,6))
+multiarray5
+OUTPUT:array([[ 1,  2,  3,  4,  5,  6],
+              [ 7,  8,  9, 10, 11, 12],
+              [13, 14, 15, 16, 17, 18],
+              [19, 20, 21, 22, 23, 24],
+              [25, 26, 27, 28, 29, 30],
+              [31, 32, 33, 34, 35, 36]])
+
+#transpose of an array
+multiarray5.transpose()
+OUTPUT:array([[ 1,  7, 13, 19, 25, 31],
+              [ 2,  8, 14, 20, 26, 32],
+              [ 3,  9, 15, 21, 27, 33],
+              [ 4, 10, 16, 22, 28, 34],
+              [ 5, 11, 17, 23, 29, 35],
+              [ 6, 12, 18, 24, 30, 36]])
